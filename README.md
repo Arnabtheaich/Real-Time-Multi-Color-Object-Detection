@@ -1,49 +1,164 @@
-# Real-Time Single Color Detection using OpenCV
+# 🎨 Real-Time Multi-Color Object Detection (v1.1)
 
-A beginner computer vision project built with Python and OpenCV that detects a single color (yellow) in real time using HSV color segmentation.
+A real-time computer vision project built with **Python** and **OpenCV** that detects multiple colored objects using HSV color segmentation. This project was developed as an improved version of my initial single-color detection project and focuses on writing cleaner, modular, and more scalable OpenCV code.
 
-> This project was created while learning OpenCV by following an online tutorial. It helped me understand the fundamentals of real-time color detection, HSV color space, masking, and bounding boxes.
+---
 
-## Features
+## ✨ Features
 
-- Real-time webcam capture
-- HSV color space conversion
-- Single color (yellow) detection
-- Bounding box around detected object
-- Press `Q` to quit
+- 🎥 Real-time webcam detection
+- 🌈 Multi-color object detection
+- 🟨 Supports:
+  - Yellow
+  - Blue
+  - Green
+  - Orange
+  - Purple
+  - White
+  - Black
+- 📦 Contour-based object detection
+- 🟩 Bounding boxes around detected objects
+- 📍 Object center point visualization
+- ⚡ Real-time FPS counter
+- 📊 Total detected object counter
+- 🖼️ Screenshot capture (`S` key)
+- ❌ Exit application (`Q` key)
+- 🧹 Noise reduction using Morphological Operations
+- 🧩 Modular project architecture
 
-## Technologies
+---
 
-- Python
+## 🧠 Computer Vision Concepts Used
+
 - OpenCV
-- NumPy
-- Pillow
+- HSV Color Space
+- Color Thresholding
+- Binary Masking
+- Contour Detection
+- Bounding Rectangle
+- Morphological Opening & Closing
+- Image Processing Pipeline
+- Real-Time Video Processing
 
-## Learning Outcomes
+---
 
-Through this project I learned:
+## 📂 Project Structure
 
-- How OpenCV captures webcam frames
-- BGR vs HSV color spaces
-- HSV thresholding using `cv2.inRange()`
-- Binary masks
-- Bounding box detection
-- Basic real-time computer vision pipeline
+```
+Real-Time-Multi-Color-Object-Detection/
 
-## Future Improvements
+│── main.py
+│── detector.py
+│── colors.py
+│── utils.py
+│── requirements.txt
+│── README.md
 
-A more advanced version of this project includes:
+├── outputs/
+│   └── screenshots/
+```
 
-- Multiple color detection
-- Contour-based detection
-- FPS counter
-- Noise removal
-- Screenshot capture
-- Shape detection
+---
 
-## Run
+## 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/Arnabtheaich/Real-Time-Multi-Color-Object-Detection.git
+```
+
+Move into the project
+
+```bash
+cd Real-Time-Multi-Color-Object-Detection
+```
+
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
+```
+
+Run
+
+```bash
 python main.py
 ```
+
+---
+
+## 🎮 Controls
+
+| Key | Action |
+|-----|--------|
+| **S** | Save Screenshot |
+| **Q** | Quit |
+
+---
+
+## 📦 Dependencies
+
+- Python 3.x
+- OpenCV
+- NumPy
+
+Install
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 📸 Sample Output
+
+> Screenshots and demo GIF will be added in future updates.
+
+---
+
+## 🔄 Version History
+
+### v1.0
+- Single color tracking (tutorial implementation)
+
+### v1.1 (Current)
+- Complete project refactoring
+- Modular architecture
+- Multi-color detection
+- Contour-based object detection
+- FPS counter
+- Object counter
+- Screenshot functionality
+- Morphological noise removal
+
+---
+
+## 🚀 Planned Features
+
+- 🎥 Video Recording
+- 🎛️ HSV Trackbars
+- 🔺 Shape Detection
+- ⭕ Circle Detection
+- 📏 Object Area Display
+- 🎨 Color-wise Bounding Boxes
+- 📈 Performance Improvements
+
+---
+
+## 📖 Learning Note
+
+This project began as a simple single-color tracking exercise while learning OpenCV. Instead of keeping it as a tutorial implementation, I gradually redesigned and extended it into a modular multi-color object detection system by applying additional computer vision concepts and improving the project architecture.
+
+---
+
+## 👨‍💻 Author
+
+**Arnab Aich**
+
+- GitHub: https://github.com/Arnabtheaich
+- LinkedIn: *(Add your LinkedIn profile here)*
+
+---
+
+⭐ If you found this project interesting, consider giving it a star.
