@@ -114,7 +114,7 @@ pip install -r requirements.txt
 ## 📸 Sample Output
 
 <p align="center">
-  <img src="E:\VS CODE\Color-Detection-project-OpenCV\assets\demo.png" alt="Dashboard Demo" width="100%">
+  <img src="assets\demo.png" alt="preview" width="100%">
 </p>
 
 ---
