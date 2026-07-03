@@ -14,7 +14,7 @@ os.makedirs("outputs/screenshots", exist_ok=True)
 # -----------------------------
 # Initialize Camera
 # -----------------------------
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)  # Change the index if you have multiple cameras
 
 if not cap.isOpened():
     print("Error: Could not open webcam.")

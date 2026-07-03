@@ -11,6 +11,11 @@ COLOR_RANGES = {
         np.array([35, 255, 255])
     ),
 
+    "red": (
+        np.array([0, 100, 100]),
+        np.array([10, 255, 255])
+    ),
+
     "Blue": (
         np.array([100, 100, 100]),
         np.array([130, 255, 255])

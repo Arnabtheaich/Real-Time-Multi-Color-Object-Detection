@@ -113,7 +113,9 @@ pip install -r requirements.txt
 
 ## 📸 Sample Output
 
-> Screenshots and demo GIF will be added in future updates.
+<p align="center">
+  <img src="E:\VS CODE\Color-Detection-project-OpenCV\assets\demo.png" alt="Dashboard Demo" width="100%">
+</p>
 
 ---
 
