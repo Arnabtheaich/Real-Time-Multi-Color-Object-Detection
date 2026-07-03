@@ -159,7 +159,7 @@ This project began as a simple single-color tracking exercise while learning Ope
 **Arnab Aich**
 
 - GitHub: https://github.com/Arnabtheaich
-- LinkedIn: *(Add your LinkedIn profile here)*
+- LinkedIn: https://www.linkedin.com/in/arnab-aich/
 
 ---
 
