@@ -1,86 +1,134 @@
-# 🎨 Real-Time Multi-Color Object Detection (v1.1)
+# 🎨 Real-Time Multi-Color Object Detection using OpenCV (v1.2)
 
-A real-time computer vision project built with **Python** and **OpenCV** that detects multiple colored objects using HSV color segmentation. This project was developed as an improved version of my initial single-color detection project and focuses on writing cleaner, modular, and more scalable OpenCV code.
+A real-time computer vision application built with **Python** and **OpenCV** for detecting and tracking multiple colored objects through webcam input.
 
----
-
-## ✨ Features
-
-- 🎥 Real-time webcam detection
-- 🌈 Multi-color object detection
-- 🟨 Supports:
-  - Yellow
-  - Blue
-  - Green
-  - Orange
-  - Purple
-  - White
-  - Black
-- 📦 Contour-based object detection
-- 🟩 Bounding boxes around detected objects
-- 📍 Object center point visualization
-- ⚡ Real-time FPS counter
-- 📊 Total detected object counter
-- 🖼️ Screenshot capture (`S` key)
-- ❌ Exit application (`Q` key)
-- 🧹 Noise reduction using Morphological Operations
-- 🧩 Modular project architecture
+This project started as a basic single-color tracking exercise and was gradually improved into a modular computer vision system with multiple detection, visualization, recording, and camera control features.
 
 ---
 
-## 🧠 Computer Vision Concepts Used
+## 🚀 Features
 
-- OpenCV
-- HSV Color Space
-- Color Thresholding
-- Binary Masking
-- Contour Detection
-- Bounding Rectangle
-- Morphological Opening & Closing
+### 🎯 Object Detection
+
+- Real-time webcam based detection
+- Multiple color detection using HSV color space
+- Contour-based object detection
+- Noise reduction using Morphological Operations
+- Object filtering based on area threshold
+
+
+---
+
+### 🎨 Detection Visualization
+
+- Color-specific bounding boxes
+- Object name display
+- Object area calculation (pixels)
+- Object center point marker
+- Improved YOLO-style label background
+- Total detected object counter
+
+
+---
+
+### 🎥 Camera & Media Features
+
+- FPS monitoring
+- Screenshot capture
+- Video recording
+- Recording status indicator
+- Multiple camera switching support
+
+
+---
+
+## 🎮 Controls
+
+| Key | Action |
+|---|---|
+| `Q` | Quit Application |
+| `S` | Capture Screenshot |
+| `R` | Start / Stop Video Recording |
+| `C` | Switch Camera |
+
+
+---
+
+# 🧠 Computer Vision Concepts Used
+
+This project demonstrates:
+
 - Image Processing Pipeline
-- Real-Time Video Processing
+- BGR to HSV Conversion
+- HSV Color Segmentation
+- Color Thresholding
+- Binary Mask Creation
+- Morphological Opening
+- Morphological Closing
+- Contour Detection
+- Bounding Box Calculation
+- Real-time Frame Processing
+
 
 ---
 
-## 📂 Project Structure
+# 🛠 Technologies Used
+
+- Python
+- OpenCV
+- NumPy
+
+
+---
+
+# 📂 Project Structure
 
 ```
 Real-Time-Multi-Color-Object-Detection/
 
-│── main.py
-│── detector.py
-│── colors.py
-│── utils.py
-│── requirements.txt
-│── README.md
+│
+├── main.py
+│
+├── detector.py
+│
+├── colors.py
+│
+├── utils.py
+│
+├── requirements.txt
+│
+├── README.md
+│
+└── outputs/
 
-├── outputs/
-│   └── screenshots/
+    ├── screenshots/
+
+    └── videos/
 ```
 
 ---
 
-## 🚀 Installation
+# 📦 Installation
 
-Clone the repository
+Clone the repository:
 
 ```bash
 git clone https://github.com/Arnabtheaich/Real-Time-Multi-Color-Object-Detection.git
 ```
 
-Move into the project
+Go to project folder:
 
 ```bash
 cd Real-Time-Multi-Color-Object-Detection
 ```
 
-Install dependencies
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run
+Run:
 
 ```bash
 python main.py
@@ -88,79 +136,137 @@ python main.py
 
 ---
 
-## 🎮 Controls
+# 🌈 Supported Colors
 
-| Key | Action |
-|-----|--------|
-| **S** | Save Screenshot |
-| **Q** | Quit |
+Current supported colors:
+
+- 🟡 Yellow
+- 🔵 Blue
+- 🟢 Green
+- 🟠 Orange
+- 🟣 Purple
+- 🔴 Red
+
+> Black and White detection are currently disabled to reduce false detection caused by shadows and lighting variations.
+
 
 ---
 
-## 📦 Dependencies
+# 📸 Output
 
-- Python 3.x
-- OpenCV
-- NumPy
+Example detection includes:
 
-Install
+```
+Detected Color
 
-```bash
-pip install -r requirements.txt
+↓
+
+Bounding Box
+
+↓
+
+Object Area
+
+↓
+
+Center Point
 ```
 
----
-
-## 📸 Sample Output
 
 <p align="center">
-  <img src="assets\demo.png" alt="preview" width="100%">
+  <img src="outputs\videos\recording_5.gif" alt="preview" width="100%">
 </p>
 
 ---
 
-## 🔄 Version History
+# 📌 Version History
 
-### v1.0
-- Single color tracking (tutorial implementation)
 
-### v1.1 (Current)
-- Complete project refactoring
-- Modular architecture
-- Multi-color detection
-- Contour-based object detection
-- FPS counter
-- Object counter
-- Screenshot functionality
-- Morphological noise removal
+## v1.0
+
+Initial learning version:
+
+- Single color detection
+- Basic HSV masking
+- Basic bounding box tracking
+
 
 ---
 
-## 🚀 Planned Features
+## v1.1
 
-- 🎥 Video Recording
+Major refactoring:
+
+Added:
+
+- Multi-color detection
+- Modular code structure
+- Contour based detection
+- FPS counter
+- Screenshot capture
+- Object counting
+- Noise filtering
+
+
+---
+
+## v1.2 (Current)
+
+Application improvement update:
+
+Added:
+
+- Color-wise bounding boxes
+- Object area display
+- Improved detection labels
+- Video recording feature
+- Recording indicator
+- Camera switching
+- Better project structure
+
+
+---
+
+# 🔮 Future Improvements
+
+Planned features:
+
 - 🎛️ HSV Trackbars
+- 🖱️ Mouse based HSV picker
 - 🔺 Shape Detection
 - ⭕ Circle Detection
-- 📏 Object Area Display
-- 🎨 Color-wise Bounding Boxes
-- 📈 Performance Improvements
+- 📏 Distance Estimation
+- 🎥 Video file processing
+- 🌐 Streamlit Web Application
+- 🤖 YOLO integration
+
 
 ---
 
-## 📖 Learning Note
+# 📚 Learning Purpose
 
-This project began as a simple single-color tracking exercise while learning OpenCV. Instead of keeping it as a tutorial implementation, I gradually redesigned and extended it into a modular multi-color object detection system by applying additional computer vision concepts and improving the project architecture.
+This project was developed step-by-step while learning Computer Vision.
+
+The goal was not only to build a working detector, but also to understand how real-time image processing systems work internally.
+
+Main learning areas:
+
+- Writing modular Python code
+- Understanding OpenCV workflow
+- Improving detection accuracy
+- Building scalable project architecture
+
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 **Arnab Aich**
 
 - GitHub: https://github.com/Arnabtheaich
 - LinkedIn: https://www.linkedin.com/in/arnab-aich/
 
+
 ---
 
-⭐ If you found this project interesting, consider giving it a star.
+⭐ If you find this project helpful, consider giving it a star!

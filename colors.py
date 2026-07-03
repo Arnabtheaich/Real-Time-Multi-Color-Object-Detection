@@ -1,49 +1,67 @@
 import numpy as np
 
-# HSV Color Ranges
-# Format:
-# "Color Name": (Lower HSV, Upper HSV)
 
 COLOR_RANGES = {
 
-    "Yellow": (
-        np.array([20, 100, 100]),
-        np.array([35, 255, 255])
-    ),
 
-    "red": (
-        np.array([0, 100, 100]),
-        np.array([10, 255, 255])
-    ),
+    "Red": {
 
-    "Blue": (
-        np.array([100, 100, 100]),
-        np.array([130, 255, 255])
-    ),
+    "lower": np.array([0, 150, 120]),
+    "upper": np.array([10, 255, 255]),
 
-    "Green": (
-        np.array([40, 70, 70]),
-        np.array([80, 255, 255])
-    ),
+    "draw_color": (0,0,255)
 
-    "Orange": (
-        np.array([10, 120, 120]),
-        np.array([20, 255, 255])
-    ),
+    },
 
-    "Purple": (
-        np.array([130, 80, 80]),
-        np.array([160, 255, 255])
-    ),
 
-    "White": (
-        np.array([0, 0, 180]),
-        np.array([180, 60, 255])
-    ),
+    "Orange": {
 
-    "Black": (
-        np.array([0, 0, 0]),
-        np.array([180, 255, 40])
-    )
+        "lower": np.array([11, 100, 100]),
+        "upper": np.array([25, 255, 255]),
+
+        "draw_color": (0, 165, 255)
+
+    },
+
+
+    "Yellow": {
+
+        "lower": np.array([20, 100, 100]),
+        "upper": np.array([35, 255, 255]),
+
+        # BGR color for OpenCV drawing
+        "draw_color": (0, 255, 255)
+
+    },
+
+
+    "Green": {
+
+        "lower": np.array([36, 50, 50]),
+        "upper": np.array([85, 255, 255]),
+
+        "draw_color": (0, 255, 0)
+
+    },
+
+
+    "Blue": {
+
+        "lower": np.array([90, 70, 50]),
+        "upper": np.array([130, 255, 255]),
+
+        "draw_color": (255, 0, 0)
+
+    },
+
+
+    "Purple": {
+
+        "lower": np.array([130, 50, 50]),
+        "upper": np.array([160, 255, 255]),
+
+        "draw_color": (255, 0, 255)
+
+    }
 
 }
